@@ -1,0 +1,33 @@
+.table{
+    width: calc(100% - 30px);
+    max-width: 100%;
+    margin: 20px 15px 0 15px;
+    border-collapse: collapse;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid rgb(207, 207, 207);
+}
+.table td{
+	padding: 5px 10px;
+	border: 1px solid rgb(207, 207, 207);
+	text-align: left;
+}
+.table tbody tr:nth-child(odd){
+	background: rgb(221, 244, 253);
+}
+.table tbody tr:nth-child(even){
+	background: #ffffff;
+}
+
+
+.filterInput{
+    float: left;
+    margin: 5px 0 0 15px;
+    font-size: 20px;
+    font-style: italic;
+}

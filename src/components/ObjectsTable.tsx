@@ -18,9 +18,8 @@ const ObjectsTableWrapper: React.FC<Props> = (props: Props) => {
 
     function onFilterChange(v: string){
         setFilterStr(v);
-        let temp = {...props.data};
         let re = new RegExp(v);
-        let filtered = temp.filter(a => {
+        let filtered = props.data.filter(a => {
             if(re.test(a.name)) return true;
         })
         props.setFilteredData(filtered);
